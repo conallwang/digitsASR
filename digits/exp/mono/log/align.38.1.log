@@ -1,0 +1,36 @@
+# gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false "gmm-boost-silence --boost=1.0 1 exp/mono/38.mdl - |" "ark:gunzip -c exp/mono/fsts.1.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,t:|gzip -c >exp/mono/ali.1.gz" 
+# Started at Wed Sep  5 09:58:31 CST 2018
+#
+gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false 'gmm-boost-silence --boost=1.0 1 exp/mono/38.mdl - |' 'ark:gunzip -c exp/mono/fsts.1.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,t:|gzip -c >exp/mono/ali.1.gz' 
+gmm-boost-silence --boost=1.0 1 exp/mono/38.mdl - 
+WARNING (gmm-boost-silence[5.4.271~1-e50bd]:main():gmm-boost-silence.cc:82) The pdfs for the silence phones may be shared by other phones (note: this probably does not matter.)
+LOG (gmm-boost-silence[5.4.271~1-e50bd]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1
+LOG (gmm-boost-silence[5.4.271~1-e50bd]:main():gmm-boost-silence.cc:103) Wrote model to -
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split4/1/utt2spk scp:data/train/split4/1/cmvn.scp scp:data/train/split4/1/feats.scp ark:- 
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 1_040
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 1_089
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 1_104
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 1_231
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 1_327
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 1_413
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 1_462
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 1_468
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 1_470
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 1_560
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 2_012
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 2_117
+LOG (apply-cmvn[5.4.271~1-e50bd]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 20 utterances, errors on 0
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 2_123
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 2_171
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 2_217
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 2_234
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 2_341
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 2_345
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 2_457
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:127) 2_757
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is -74.5615 over 4738 frames.
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:137) Retried 0 out of 20 utterances.
+LOG (gmm-align-compiled[5.4.271~1-e50bd]:main():gmm-align-compiled.cc:139) Done 20, errors on 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Wed Sep  5 09:58:31 CST 2018, elapsed time 0 seconds

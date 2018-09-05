@@ -1,0 +1,51 @@
+# compute-mfcc-feats --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_train.1.scp ark:- | copy-feats --compress=true ark:- ark,scp:/home/johnson/桌面/Kaldi/kaldi-trunk/egs/digits/mfcc/raw_mfcc_train.1.ark,/home/johnson/桌面/Kaldi/kaldi-trunk/egs/digits/mfcc/raw_mfcc_train.1.scp 
+# Started at Wed Sep  5 09:58:25 CST 2018
+#
+copy-feats --compress=true ark:- 'ark,scp:/home/johnson/桌面/Kaldi/kaldi-trunk/egs/digits/mfcc/raw_mfcc_train.1.ark,/home/johnson/桌面/Kaldi/kaldi-trunk/egs/digits/mfcc/raw_mfcc_train.1.scp' 
+compute-mfcc-feats --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_train.1.scp ark:- 
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 78148 bytes in RIFF chunk, but after first data block there will be 38 + 71464 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 1_040
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 75766 bytes in RIFF chunk, but after first data block there will be 38 + 69082 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 1_089
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 83484 bytes in RIFF chunk, but after first data block there will be 38 + 76800 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 1_104
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 70684 bytes in RIFF chunk, but after first data block there will be 38 + 64000 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 1_231
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 84420 bytes in RIFF chunk, but after first data block there will be 38 + 77736 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 1_327
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 83766 bytes in RIFF chunk, but after first data block there will be 38 + 77082 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 1_413
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 78170 bytes in RIFF chunk, but after first data block there will be 38 + 71486 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 1_462
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 78812 bytes in RIFF chunk, but after first data block there will be 38 + 72128 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 1_468
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 71462 bytes in RIFF chunk, but after first data block there will be 38 + 64778 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 1_470
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 76998 bytes in RIFF chunk, but after first data block there will be 38 + 70314 bytes (we do not support reading multiple data chunks).
+LOG (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:172) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 1_560
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 96812 bytes in RIFF chunk, but after first data block there will be 38 + 87146 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 2_012
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 92430 bytes in RIFF chunk, but after first data block there will be 38 + 82770 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 2_117
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 89412 bytes in RIFF chunk, but after first data block there will be 38 + 79744 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 2_123
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 91794 bytes in RIFF chunk, but after first data block there will be 38 + 82126 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 2_171
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 89610 bytes in RIFF chunk, but after first data block there will be 38 + 79942 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 2_217
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 89668 bytes in RIFF chunk, but after first data block there will be 38 + 80000 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 2_234
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 90142 bytes in RIFF chunk, but after first data block there will be 38 + 80472 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 2_341
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 88190 bytes in RIFF chunk, but after first data block there will be 38 + 78522 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 2_345
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 86948 bytes in RIFF chunk, but after first data block there will be 38 + 77280 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 2_457
+WARNING (compute-mfcc-feats[5.4.271~1-e50bd]:Read():wave-reader.cc:260) Expected 95932 bytes in RIFF chunk, but after first data block there will be 38 + 86262 bytes (we do not support reading multiple data chunks).
+LOG (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:172) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:173) Processed features for key 2_757
+LOG (compute-mfcc-feats[5.4.271~1-e50bd]:main():compute-mfcc-feats.cc:176)  Done 20 out of 20 utterances.
+LOG (copy-feats[5.4.271~1-e50bd]:main():copy-feats.cc:143) Copied 20 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Wed Sep  5 09:58:25 CST 2018, elapsed time 0 seconds
